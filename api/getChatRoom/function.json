@@ -8,7 +8,7 @@
       "methods": [
         "get"
       ],
-      "route": "getGameData/{roomId}"
+      "route": "getChatRoom/{roomId}"
     },
     {
       "type": "http",
@@ -25,5 +25,5 @@
       "id": "{roomId}"
     }
   ],
-  "scriptFile": "../dist/getGameData/index.js"
+  "scriptFile": "../dist/getChatRoom/index.js"
 }
