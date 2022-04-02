@@ -1,5 +1,6 @@
 import { Container, TextField, Button, Stack, Divider, Grid, Typography } from "@mui/material";
 import { useMemo, useState } from "react";
+import { nanoid } from 'nanoid'
 import { useNavigate } from "react-router-dom";
 import { IChatRoom } from "../../api/common/interfaces/chat-room-interfaces";
 import FastChatClient from '../clients/fast-chat-client';
@@ -20,13 +21,13 @@ const Landing = () => {
     }
 
     const createRoom = () => {
+        const id = nanoid(5);
         const gameRoom: IChatRoom = {
-            id:roomId,
+            id,
             users:[]
         }
         fastChatClient.createGameRoom(gameRoom)
         .then((room) => {
-            console.log(room);
             navigate(`/${roomId}`);
         });
     }
