@@ -17,8 +17,8 @@
     {
       "name": "documentOut",
       "type": "cosmosDB",
-      "databaseName": "mito-db",
-      "collectionName": "GameRooms",
+      "databaseName": "fast-chat-db",
+      "collectionName": "ChatRooms",
       "createIfNotExists": true,
       "connectionStringSetting": "DB_CONNECTION_STRING",
       "direction": "out"

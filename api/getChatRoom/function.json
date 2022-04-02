@@ -19,8 +19,8 @@
       "type": "cosmosDB",
       "direction": "in",
       "name": "inputDocument",
-      "databaseName": "mito-db",
-      "collectionName": "GameRooms",
+      "databaseName": "fast-chat-db",
+      "collectionName": "ChatRooms",
       "connectionStringSetting": "DB_CONNECTION_STRING",
       "id": "{roomId}"
     }
