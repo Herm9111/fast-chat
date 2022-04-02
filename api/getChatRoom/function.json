@@ -1,0 +1,29 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "route": "getGameData/{roomId}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "inputDocument",
+      "databaseName": "mito-db",
+      "collectionName": "GameRooms",
+      "connectionStringSetting": "DB_CONNECTION_STRING",
+      "id": "{roomId}"
+    }
+  ],
+  "scriptFile": "../dist/getGameData/index.js"
+}

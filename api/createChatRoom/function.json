@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "documentOut",
+      "type": "cosmosDB",
+      "databaseName": "mito-db",
+      "collectionName": "GameRooms",
+      "createIfNotExists": true,
+      "connectionStringSetting": "DB_CONNECTION_STRING",
+      "direction": "out"
+  }
+  ],
+  "scriptFile": "../dist/createGame/index.js"
+}

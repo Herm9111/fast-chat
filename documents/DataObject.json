@@ -1,0 +1,50 @@
+{
+    "<RoomID>": {
+        "users": [
+            "maherr",
+            "dinesha",
+            "rohitg",
+            "vfoti"
+        ],
+        "numberOfCases": 1,
+        "cases": {
+            "1": {
+                "murderer": "vfoti",
+                "victim": "rohitg",
+                "votingRounds": 3,
+                "votingResults": {
+                    "1": {
+                        "murderer": "vfoti",
+                        "suspect": "dinesha",
+                        "votes": {
+                            "maherr": "vfoti",
+                            "dinesha": "rohit",
+                            "vfoti": "dinesha",
+                            "rohitg": "dinesha"
+                        }
+                    },
+                    "2": {
+                        "murderer": "vfoti",
+                        "suspect": "maherr",
+                        "votes": {
+                            "maherr": "vfoti",
+                            "dinesha": "maherr",
+                            "vfoti": "maherr",
+                            "rohitg": "dinesha"
+                        }
+                    },
+                    "3": {
+                        "murderer": "vfoti",
+                        "suspect": "vfoti",
+                        "votes": {
+                            "maherr": "vfoti",
+                            "dinesha": "vfoti",
+                            "vfoti": "maherr",
+                            "rohitg": "vfoti"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
