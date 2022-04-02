@@ -28,7 +28,7 @@ const Landing = () => {
         }
         fastChatClient.createGameRoom(gameRoom)
         .then((room) => {
-            navigate(`/${roomId}`);
+            navigate(`/${room.id}`);
         });
     }
     return (
