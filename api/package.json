@@ -12,6 +12,7 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
+    "node-fetch": "^3.2.3",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
