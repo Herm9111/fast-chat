@@ -30,8 +30,6 @@ export async function get<T>(hostname:string, path: string, headers: HttpRequest
 
 
             res.on('data', (d) => {
-                process.stdout.write(d)
-
                 resolve(d)});
         })
 
